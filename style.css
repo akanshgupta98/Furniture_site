@@ -9,7 +9,10 @@
     font-size: 20px;
     padding:20px;
     font-family: 'Charm',cursive;
-
+}
+#main_h a{
+    text-decoration: none;
+    color:#000;
 }
 #main_h div{
     width:33%;
@@ -55,16 +58,27 @@ hr{
     padding-top: 25px;
     position: absolute;
 }
+#main_h_l a{
+    text-decoration: none;
+    color:#000;
+}
 /* Login and contact styling */
 h4{
     float: left;
     padding-right: 30px;
 }
 /* cover */
-.cover a{
+.dropdown{
     position: absolute;
-    top:58%;
-    left:40%;
+    top:150px;
+    width:100%;
+    height: 500px;
+
+}
+.dropdown_trigger{
+    position: absolute;
+    display: inline-block;
+    left:1%;
     padding: 20px;
     text-decoration: none;
     color:#fff;
@@ -72,6 +86,97 @@ h4{
     background-color: #000;
     transition: all 1s;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+.dropdown_menu{
+    position: absolute;
+    top:60px;
+    left:0%;
+    padding: 20px;
+    list-style-type: none;
+}
+.dropdown.joy{
+    background-color: #fff;
+}
+.dropdown_menu li{
+    display: inline-block;
+}
+
+#sofa_dr, #dining_dr, #bed_dr{
+    width:300px;
+    height: 300px;
+     /* border:2px solid #000;  */
+    right:20%;
+    padding: 20px;
+    margin-right: 20px;
+    
+}
+.dropdown_menu{
+    box-shadow: 5px 5px 60px rgba(0,0,0,.7);  
+    display: none;  
+}
+.sofa_dr,.bed_dr,.dining_dr{
+     display: none; 
+    position: absolute;
+    z-index:100;
+    width:350px;
+    left:2px;
+    top:0px;
+    height: 385px;
+    background-color: #fff;
+    opacity: .8;
+}
+.kj.kl{ 
+    position: absolute;
+    top:120px;
+    /* border:2px solid #000; */
+    font-size: 40px;
+    font-weight: 1000px;
+    color:#000;
+    background-color: #fff;
+    display: inline-block;
+    left:30%;
+    opacity: 1 !important;
+}
+
+#sofa_dr,#dining_dr{
+    background-color: #e2e2e2;
+    
+}
+.dropdown_menu.active{
+    top:75px;
+    display: block;
+    background-color: #e2e2e2;
+}
+.dropdown{
+    display: inline-block
+}
+#sofa_img{
+    background-image: url(fo.png); 
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+     
+    
+}
+#dining_img{
+    background-image: url(https://purepng.com/public/uploads/large/purepng.com-sofasofafurniturearmrestsentirely-upholsteredloungecouchbedsteaddivan-1701527997471wpidk.png); 
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    left: 0%;
+    background-position: center;
+}
+#bed_img{
+    background-position: center;
+    background-image: url(https://purepng.com/public/uploads/large/purepng.com-sofasofafurniturearmrestsentirely-upholsteredloungecouchbedsteaddivan-1701527997471wpidk.png); 
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    left: 0%;
 }
 .cover a:hover{
     transform: scale(1.2);
@@ -211,7 +316,10 @@ footer a{
     background-position: center !important;
     opacity: 1;
 }
-
+#main_h_s a{
+    text-decoration: none;
+    color:#000;
+}
 /* Search.html styling ends */
 /* Login.html styling starts */
 /* Login page(registered page) */
@@ -264,6 +372,10 @@ footer a{
 /* contact html styling starts */
 #contact_page_body{
 }
+#main_h_c a{
+    text-decoration: none;
+    color:#000;
+}
 #contact{
     position:relative ;
     margin-top: 2%;
@@ -294,3 +406,183 @@ footer a{
     font-size: 20px;
     border-bottom: 2px solid #aaa; 
 }
+/* Sofa html page styling starts */
+#sofa_cover_img{
+    background-image: url(https://www.geshyuk.com/wp-content/uploads/2018/03/Modern-Luxury-Italian-Sofa-tufted-nubuck-leather-sofa-for-Livingroom-furniture1.jpg);
+    width:100%;
+    height:520px;
+    background-attachment: fixed; 
+    /* this is responsible for parallax effect */
+    background-size: cover !important;
+    background-position: center !important;
+    opacity: 1;
+}
+#l-shape, #u-shape,#retro{
+    width: 48%;
+    display: inline-block;
+    float: left;x
+    border:1px solid #000;
+    padding-right:20px;
+}
+#l-shape-img{
+    background-image: url(https://ae01.alicdn.com/kf/HTB1.cxCNXXXXXcRXFXXq6xXFXXXV/top-graded-italian-genuine-leather-sofa-sectional-living-room-sofa-chesterfield-sofa-L-shape-with-crystal.jpg_640x640.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    transition: all 1s;
+    border-radius: 15px;
+}
+#u-shape-img{
+    background-image: url(https://ae01.alicdn.com/kf/HTB1FyVfXN2rK1RkSnhJq6ykdpXay/New-model-U-shaped-modern-italy-genuine-real-leather-sectional-latest-corner-furniture-living-room-sex.jpg);
+    width: 100%;
+    position: relative;
+    height: 300px;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: all 1s;
+    border-radius: 15px;
+}
+#retro-img{
+    background-image: url(https://vintageindustrialstyle.com/wp-content/uploads/2016/05/featured-4.jpg);
+    width: 100%;
+    position: relative;
+    height: 300px;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: all 1s;
+    border-radius: 15px;
+    
+}
+.types_sofa{
+    width:100%;
+    height: 100%;
+    padding-top:10px;
+    position: relative;
+    padding-bottom: 26px;
+}
+#l-shape:hover #l-shape-img,#u-shape:hover #u-shape-img,#retro:hover #retro-img{
+    
+    filter: brightness(1.3);
+        
+}
+#sofa_end_img{
+    background-image: url(https://www.geshyuk.com/wp-content/uploads/2018/03/Modern-Luxury-Italian-Sofa-tufted-nubuck-leather-sofa-for-Livingroom-furniture1.jpg);
+    width:100%;
+    margin-top:54%;
+    height:520px;
+    background-attachment: fixed; 
+    /* this is responsible for parallax effect */
+    background-size: cover !important;
+    background-position: center !important;
+    opacity: 1;
+}
+.types_sofa  a{
+    text-decoration: none;
+    color: #000;
+}
+.types_sofa h2{
+    margin-top: 5%;
+    margin-left:25%;
+}
+
+/* sofa.html styling ends. */
+/* beds.html styling starts */
+#bed_cover_img{
+    background-image: url(https://www.idfdesign.com/images/luxury-classic-bed-and-canopy-bed/le20-vanity-luxury-beds.jpg);
+    width:100%;
+    height:520px;
+    background-attachment: fixed; 
+    /* this is responsible for parallax effect */
+    background-size: cover !important;
+    background-position: center !important;
+    opacity: 1;
+}
+#double-bed, #single-bed,#bunk-bed{
+    width: 48%;
+    display: inline-block;
+    float: left;x
+    border:1px solid #000;
+    padding-right:20px;
+}
+#double-bed-img{
+    background-image: url(https://ae01.alicdn.com/kf/HTB1HN0HXAvoK1RjSZFwq6AiCFXaH/Wood-bedroom-furniture-double-bed-frame-bedroom-sets-luxury-king-size.jpg_640x640.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    transition: all 1s;
+    border-radius: 15px;
+}
+#single-bed-img{
+    background-image: url(http://www.razode.com/images/traditional-scandinavian-bedroom-furniture-with-wall-mounted-wooden-black-upholstered-double-platform-beds-and-white-double-bed-sheets-and-also-beige-double-blankets-plus-rectangle-white-double-pillow.jpg);
+    width: 100%;
+    position: relative;
+    height: 300px;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: all 1s;
+    border-radius: 15px;
+}
+#bunk-bed-img{
+    background-image: url(https://media.cymaxstores.com/Images/3865/1610465-L.jpg);
+    width: 100%;
+    position: relative;
+    height: 300px;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: all 1s;
+    border-radius: 15px;
+    
+}
+.types_bed{
+    width:100%;
+    height: 100%;
+    padding-top:10px;
+    position: relative;
+    padding-bottom: 26px;
+}
+#double-bed:hover #double-bed-img,#single-bed:hover #single-bed-img,#bunk-bed:hover #bunk-bed-img{
+    
+    filter: brightness(1.2);
+        
+}
+
+#bed_end_img{
+    background-image: url(https://www.idfdesign.com/images/luxury-classic-bed-and-canopy-bed/le20-vanity-luxury-beds.jpg);
+    width:100%;
+    margin-top:54%;
+    height:520px;
+    background-attachment: fixed; 
+    /* this is responsible for parallax effect */
+    background-size: cover !important;
+    background-position: center !important;
+    opacity: 1;
+}
+.types_bed  a{
+    text-decoration: none;
+    color: #000;
+}
+.types_bed h2{
+    margin-top: 5%;
+    margin-left:25%;
+}
+#cover_head, #cover_head_sofa{
+    position: absolute;
+    color: #fff;
+    top:350px;
+    left: 25%;
+    background: rgba(0,0,0,.7);
+    font-size: 30px;
+}
+#cover_title_head, #cover_title_sofa{
+    position: absolute;
+    color: #fff;
+    top:295px;
+    background: rgba(0,0,0,.7);
+    left: 29.5%;
+    font-size: 40px;
+}
+
